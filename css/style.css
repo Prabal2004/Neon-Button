@@ -1,10 +1,5 @@
 body
 {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	background: #031321;
 	font-family: Gilroy Extrabold;
@@ -14,12 +9,15 @@ body
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 20px;
-	color: #2196f3; 
+}
+.Header
+{
+	position: sticky;
 }
 a
 {
 	position: relative;
+	align-self: flex-start;
 	display: inline-block;
 	padding: 15px 30px;
 	color: #2196f3;
@@ -36,19 +34,6 @@ a:hover
 	color: #255784;
 	background: #2196f3;
 	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-	transition-delay: 0s;
-}
-a:visited
-{
-	color: ##57595D;
-	background: ##57595D;
-	box-shadow: 0 0 10px ##57595D, 0 0 40px ##57595D;
-}
-a:focus
-{
-	color: #255784;
-	background: #2196f3;
-	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 	transition-delay: 0.15s;
 }
 a:active
@@ -56,4 +41,21 @@ a:active
 	color: #39ff14;
 	background: #24E500;
 	box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14, 0 0 80px #39ff14;
+}
+.pfp
+{
+	border-radius: 50%;
+	max-width: 3%;
+	position:fixed;
+	right: 0;
+	top: 0;
+	padding: 15px;
+}
+.Content
+{
+	margin: 170px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
 }
